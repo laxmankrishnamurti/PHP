@@ -41,4 +41,3 @@ $userData = $conn->query("show tables");
 while ($row = $userData->fetch(PDO::FETCH_NUM)) {
     print_r($row);
 }
-?>

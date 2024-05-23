@@ -12,6 +12,3 @@ try {
 } catch (PDOException $e) {
     echo "Failed to connection database!!! Error : " . $e->getMessage();
 }
-
-
-?>

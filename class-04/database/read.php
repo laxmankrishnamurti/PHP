@@ -32,5 +32,3 @@ foreach ($getUsers as $key => $user) {
     </tr>";
 }
 echo "</table>";
-
-?>
