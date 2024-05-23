@@ -7,6 +7,8 @@ if ($_GET) {
 }
 ;
 
+//Whenever the button is clicked the function is going to execute
+
 function sayHello($user)
 {
     echo "Hello " . $user;
