@@ -75,6 +75,8 @@ echo "</table>";
 
 echo "<br/>";
 
+//Multidimensional associative array 
+
 $personData = [
     ["no" => 1, "name" => "Laxman", "email" => "laxmankrishnamurti", "blooed" => "A+"],
     ["no" => 2, "name" => "Anjali", "email" => "anjalikumari@gmail.com", "blooed" => "A+"],
