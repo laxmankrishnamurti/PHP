@@ -14,7 +14,14 @@ if (isset($_FILES['file'])) {
 echo "<br/>";
 
 if (isset($_POST["button"])) {
+    setcookie("username", "laxman", time() + (86400), true);
     btnClicked();
+
+    echo "<br/>";
+
+    if (($_COOKIE["username"])) {
+        echo "Cookie value is : " . $_COOKIE["username"];
+    }
 }
 
 function btnClicked()
