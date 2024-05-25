@@ -10,3 +10,14 @@ if (isset($_FILES['file'])) {
 } else {
     echo "No file is selected";
 }
+
+echo "<br/>";
+
+if (isset($_POST["button"])) {
+    btnClicked();
+}
+
+function btnClicked()
+{
+    echo "Button clicked function called";
+}
