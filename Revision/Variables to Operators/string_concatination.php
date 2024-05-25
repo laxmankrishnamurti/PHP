@@ -1,5 +1,10 @@
 <?php
 
+//String concatination :- Combination of multiple string and variable or constants;
+
+//For string concatination we use " DOT[.] " notation.
+
+
 $name = "Laxman Krishnamurti";
 echo "My name is " . $name;
 
