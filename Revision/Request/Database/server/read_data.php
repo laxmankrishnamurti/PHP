@@ -9,6 +9,7 @@ echo "<br/>";
 
 $userDetails = $getUsers->fetchAll();
 
+
 echo "<table border = '2'>";
 echo "<tr>
     <th>_id</th>
@@ -32,6 +33,14 @@ foreach ($userDetails as $key => $users) {
 echo "<table/>";
 
 echo "<br/>";
+
+/**
+ * How to get data from Multidimensional associative array
+ * 
+ * $userDetails  =  Array of Array
+ * $users        =  Array
+ * $user         =  Inside Array
+ */
 
 
 
