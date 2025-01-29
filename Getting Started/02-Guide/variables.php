@@ -15,6 +15,7 @@
  */
 
 $name = "Laxman Krishnamurti";
+$email = "laxmankrishnamurti";
 $age = 22;
 $price = 150.45;
 $isLoggedIn = true;
@@ -39,3 +40,7 @@ echo "<br>";
 echo "This is a string using single quotes with variable $name";
 echo "<br>";
 echo "My name is {$name}";
+echo "<br>";
+echo "This is my email = " . $email . "@gmail.com";
+
+# Variable's rules are the same as we see in other programming languages. 
