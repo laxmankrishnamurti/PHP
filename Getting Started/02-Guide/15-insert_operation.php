@@ -5,6 +5,7 @@ include("./config/database_connection.php");
 // INSERT Query
 
 $date = date("Y-m-d H:i:s");
+// echo date("d-m-Y H: i A", strtotime($variable));
 $sql = "INSERT into users (username, password, created_at) values ('Harshad Mehta', 'harshad@123','$date')";
 
 $result = $conn->query($sql);

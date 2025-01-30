@@ -10,3 +10,7 @@ echo "<pre/>";
 while ($row = $fetched_data->fetch_assoc()) {   // Loads one-by-one and discards the used row. 
     print_r($row);
 }
+
+// while($row = mysqli_fetch_assoc($fetched_data)){
+//     print_r($row)
+// }
