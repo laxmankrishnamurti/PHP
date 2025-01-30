@@ -13,6 +13,3 @@ if ($result) {
 } else {
     echo "Signup failed!, Err :: " . $conn->error;
 }
-
-
-echo $lskadjf;
