@@ -37,7 +37,7 @@ if (isset($_SESSION['error'])) {
 /**
  * If user explicitly logged out then delete the session key and redirect the user to the login page. 
  * 
- *  - include the session start file;
+ *  - include the session start file;7
  *  - session_destroy();
  *  - header("LOCATION: login.php");
  */
