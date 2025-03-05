@@ -14,9 +14,25 @@
 $countries = array("India", "Pakistan", "Nepal", "Shrilanka", "China", "Russia", "Afganistan");
 
 array_push($countries, "Isreal", "USA", "Brazil");
-// array_pop($countries);
-// array_shift($countries);
+print_r($countries);
+echo "<br/>";
+
+array_pop($countries);
+print_r($countries);
+echo "<br/>";
+
+array_shift($countries);
+print_r($countries);
+echo "<br/>";
+
+array_unshift($countries, "United World");
+print_r($countries);
+echo "<br/>";
+
 $new_countries = array_reverse($countries);
+print_r($new_countries);
+echo "<br/>";
+
 foreach ($new_countries as $country) {
     echo $country;
     echo "<br/>";
@@ -36,11 +52,14 @@ $user = array(
     "email" => "laxmankrishnamurti@gmail.com",
     "is_logged_in" => true
 );
-
+echo "<br/>";
+print_r($user);
+echo "<br/>";
 //$user = array_flip($user);  // Flip the array -> Key become vlaue and vlaue becomes key
 //$user = array_reverse($user);
 // exit;
 ?>
+
 <table border="1">
     <tr>
         <th>Key</th>
@@ -52,10 +71,10 @@ $user = array(
 
         <tr>
             <td>
-                <?php echo ucwords($key) ?>
+                <?= ucwords($key) ?>
             </td>
             <td>
-                <?php echo $value ?>
+                <?= $value ?>
             </td>
         </tr>
 
@@ -94,11 +113,26 @@ echo "Multi-Dimensional Associative Array";
 echo "<br/>";
 echo "<br/>";
 
-foreach ($users as $user) {
-    foreach ($user as $key => $value) {
-        echo ucwords($key) . "  ";
-        echo $value;
-        echo "<br/>";
-    }
-}
+
+// foreach ($users as $user) {
+//     foreach ($user as $key => $value) {
+//         echo ucwords($key) . "  ";
+//         echo $value;
+//         echo "<br/>";
+//     }
+// }
 ?>
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+    <?php foreach ($users as $user) { ?>
+        <tr>
+            <?php foreach ($user as $key => $value) { ?>
+                <td><?= $value ?></td>
+            <?php } ?>
+        </tr>
+    <?php } ?>
+</table>
