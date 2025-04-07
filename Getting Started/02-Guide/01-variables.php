@@ -37,7 +37,7 @@ var_dump($isLoggedIn);
 
 echo 'This is a string using single quotes with variable $name';
 echo "<br>";
-echo "This is a string using single quotes with variable $name";
+echo "This is a string using double quotes with variable $name";
 echo "<br>";
 echo "My name is {$name}";
 echo "<br>";
