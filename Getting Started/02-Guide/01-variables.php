@@ -22,11 +22,14 @@ $isLoggedIn = true;
 
 var_dump($name);
 echo "<br>";
+var_dump($email);
+echo "<br>";
 var_dump($age);
 echo "<br>";
 var_dump($price);
 echo "<br>";
 var_dump($isLoggedIn);
+echo "<br>";
 
 /**
  * Use ".(dot)" sign to concatinate a variable with string or use "{}" sign and put that variable inside the expression. 
