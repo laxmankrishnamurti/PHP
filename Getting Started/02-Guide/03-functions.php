@@ -25,6 +25,8 @@ $user_email = "laxmankrishnamurti@gmail.com";
 $user_email_leng = strlen($user_email);
 echo "User Email Length is {$user_email_leng}";
 echo "<br/>";
+echo $user_email[1];
+echo "<br/>";
 $new_user_email = str_replace("laxmankrishnamurti", "laxmankrishnamurti.dev", $user_email);
 echo "New user_email : {$new_user_email}";
 echo "<br/>";
