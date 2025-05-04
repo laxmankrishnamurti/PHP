@@ -67,7 +67,6 @@ echo "<br/>";
 echo $result2;
 echo "<br/>";
 var_dump($result2);
-
 $char = "abc";
 $char_result = is_numeric($char);
 echo "<br/>";
